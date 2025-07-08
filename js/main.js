@@ -18,10 +18,6 @@
     var doc = document.documentElement;
     doc.setAttribute('data-useragent', navigator.userAgent);
 
-
-  
-
-
     /* Menu on Scrolldown
      * ------------------------------------------------------ */
     var clMenuOnScrolldown = function() {
@@ -38,7 +34,6 @@
 
         });
     };
-
 
     /* OffCanvas Menu
      * ------------------------------------------------------ */
@@ -70,7 +65,6 @@
         });
 
     };
-
 
     /* photoswipe
      * ----------------------------------------------------- */
@@ -124,7 +118,6 @@
         });
     };
 
-
     /* Stat Counter
      * ------------------------------------------------------ */
     var clStatCount = function() {
@@ -166,7 +159,6 @@
         });
     };
 
-
     /* Masonry
      * ---------------------------------------------------- */
     var clMasonryFolio = function() {
@@ -185,7 +177,6 @@
             containerBricks.masonry('layout');
         });
     };
-
 
     /* slick slider
      * ------------------------------------------------------ */
@@ -208,7 +199,6 @@
             }]
         });
     };
-
 
     /* Smooth Scrolling
      * ------------------------------------------------------ */
@@ -236,13 +226,11 @@
 
     };
 
-
     /* Placeholder Plugin Settings
      * ------------------------------------------------------ */
     var clPlaceholder = function() {
         $('input, textarea, select').placeholder();
     };
-
 
     /* Alert Boxes
      * ------------------------------------------------------ */
@@ -253,7 +241,6 @@
         });
 
     };
-
 
     /* Animate On Scroll
      * ------------------------------------------------------ */
@@ -269,7 +256,6 @@
         });
 
     };
-
 
     /* AjaxChimp
      * ------------------------------------------------------ */
@@ -303,7 +289,6 @@
 
     };
 
-
     /* Back to Top
      * ------------------------------------------------------ */
     var clBackToTop = function() {
@@ -324,12 +309,10 @@
         });
     };
 
-
     /* Initialize
      * ------------------------------------------------------ */
     (function clInit() {
 
-        clPreloader();
         clMenuOnScrolldown();
         clOffCanvas();
         clPhotoswipe();
