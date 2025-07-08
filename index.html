@@ -801,6 +801,27 @@ Copyright &copy;<script data-cfasync="false" src="#"></script><script>document.w
 
     <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"95ba5ff00b8a6f6f","serverTiming":{"name":{"cfExtPri":true,"cfEdge":true,"cfOrigin":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}},"version":"2025.6.2","token":"cd0b4b3a733644fc843ef0b185f98241"}'
         crossorigin="anonymous"></script> -->
-</body>
+        
+        <script>
+    $(document).ready(function() {
+        $("html").addClass('cl-preload');
+        $(window).on('load', function() {
+            $("#loader").fadeOut("slow", function() {
+                $("#preloader").delay(300).fadeOut("slow");
+            });
+            $("html").removeClass('cl-preload');
+            $("html").addClass('cl-loaded');
+        });
+        setTimeout(function() {
+            if ($("#preloader").is(":visible")) {
+                $("#loader").fadeOut("slow", function() {
+                    $("#preloader").fadeOut("slow");
+                });
+                $("html").removeClass('cl-preload');
+                $("html").addClass('cl-loaded');
+            }
+        }, 10000); // 10-second fallback
+    });
+</script>
 
 </html>
